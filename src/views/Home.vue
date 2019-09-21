@@ -62,12 +62,10 @@
   </v-container>
 </template>
 <script>
-import Map from '../components/Map';
+// import Map from '../components/Map';
 
 
-export default {
-  components: {
-    Map,
-  },
+export default { 
+  
 };
 </script>

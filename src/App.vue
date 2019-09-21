@@ -1,18 +1,19 @@
 
 <template>
-  <Map/>
+  <Map />
 </template>
 <script>
-import Map from './components/Map';
+import Map from "./components/Map";
+import Lunar from "./components/Lunar"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Map,
+    Map
   },
   data: () => ({
-    // moonphases: [];
+    moonphases: {}
     //
-  }),
+  })
 };
 </script>

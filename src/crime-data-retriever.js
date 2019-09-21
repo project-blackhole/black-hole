@@ -1,5 +1,5 @@
 const crimeData = (location, dates) => {
-  // takes in a location object with a string, a state. Takes in an array of dates.
+  // takes in a location object with an object with {lat, long}. Takes in an array of dates.
   const datesData = dates.forEach(date => {
     return new Promise(function(resolve, reject) {
       const dateData = retrieveCrimeDataFromDate(location, date);
@@ -20,7 +20,7 @@ const crimeData = (location, dates) => {
 };
 
 function retrieveCrimeDataFromDate(location, date) {
-  // takes in a location object with a string, a state.
+  // takes in a location object with an object with {lat, long}.
   // Calls Crime Data Explorer API for crime data. Returns this data.
 
   fetch(
